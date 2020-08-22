@@ -1,0 +1,30 @@
+extends ../templates/template
+include ../mixins/cardservices
+include ../mixins/cardarticles
+block main
+  article.presentation
+    section.presentation__imgfondo
+      .presentation__img
+        //- img(src="../public/assets/img/bg-intro-mobile.svg", alt="")
+        img(src="../public/assets/img/image-mockups.png", alt="")
+    section.presentation__description
+      .presentation-description__titulo: h1 Banca Digital de la Próxima Generación
+      .presentation-description__concepto: p Lleva tu vida financiera en línea. Ahora su cuenta cancaria fácil sera, una ventanilla unica para gastar, ahorrar, presupuestación, invertir y mucho más
+      .presentation-description__button: button Solicitud de Invitación
+  article.easybank
+    section.easybank__titulo-description
+      .easybank__titulo: h2 ¿Por qué elegir EasyBank?
+      .easybank__description
+        p Aprovechamos la banca abierta para convertir su cuenta bancaria en su centro financiero.
+        p Controla tus finanzas como nunca antes
+    section.easybank__servicios
+      .easybank__servicio: +servicios('../public/assets/img/icon-online.svg','Banca en Linea','Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, pariatur mollitia.')
+      .easybank__servicio: +servicios('../public/assets/img/icon-budgeting.svg','Presupuesto Simple','Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, pariatur mollitia.')
+      .easybank__servicio: +servicios('../public/assets/img/icon-onboarding.svg','Incorporación Rápida','Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, pariatur mollitia.')
+      .easybank__servicio: +servicios('../public/assets/img/icon-api.svg','Api Abierta','Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, pariatur mollitia.')
+  article.articulos
+    .articulos__titulo: h2 Ultimos Articulos
+    .articulo: +articulos('../public/assets/img/image-currency.jpg','lorem ipsum','Lorem ipsum dolor sit amet.','Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus minima eveniet, iusto culpa at voluptatum.')
+    .articulo: +articulos('../public/assets/img/image-restaurant.jpg','lorem ipsum','Lorem ipsum dolor sit amet.','Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus minima eveniet, iusto culpa at voluptatum.')
+    .articulo: +articulos('../public/assets/img/image-plane.jpg','lorem ipsum','Lorem ipsum dolor sit amet.','Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus minima eveniet, iusto culpa at voluptatum.')
+    .articulo: +articulos('../public/assets/img/image-confetti.jpg','lorem ipsum','Lorem ipsum dolor sit amet.','Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus minima eveniet, iusto culpa at voluptatum.')

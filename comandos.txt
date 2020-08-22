@@ -1,0 +1,28 @@
+Comandos para Utilizar Gulp
+  - npm install --global gulp-cli → Para instalar Gulp en tu ordenador, "solo se tiene que instalar una unica vez"
+  - npm init → Es para iniciar un proyecto de NodeJS
+  - npm install --save-dev gulp → Instala una dependencia de desarrollo, para poder trabajar con Gulp
+
+Comandos para Utilizar Babel 7
+  - npm install --save-dev @babel/core @babel/preset-env @babel/register
+  - npm install --save-dev gulp-babel → Para que Gulp convierta codigo JS nuevo a codigo JS antiguo
+  - npm install --save-dev gulp-terser → Para minificar codigo JS
+  - npm install --save-dev gulp-concat → Unificar todos los archivos JS en un solo archivo
+
+Comando para Utilizar Html
+  - npm install --save-dev gulp-htmlmin
+
+Comando para Utilizar Css
+  - npm install --save-dev gulp-postcss
+
+Comando para Utilizar Pug
+  - npm install --save-dev gulp-pug
+
+Comando para Utilizar Sass
+  - npm install --save-dev gulp-sass
+
+Comando para Comprimir cualquier Imagen
+  - npm install --save-dev gulp-imagemin
+
+Comando para limpiar el cache de los navegadores
+  - npm install --save-dev gulp-cache-bust

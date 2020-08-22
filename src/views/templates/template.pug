@@ -1,0 +1,21 @@
+include ../config/menu
+<!DOCTYPE html>
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title EasyBank
+    link(rel="stylesheet", href="../public/css/style.css")
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
+  body
+    header.header
+      block header
+        .header__logo: img(src="../public/assets/img/logo.svg", alt="")
+        .header__icon: img(src="../public/assets/img/icon-hamburger.svg", alt="")
+        nav.nav: ul.menu
+          for page in pages
+            li.menu__list: a(href=page.link)= page.title.toUpperCase()
+    main.main
+      block main
+    footer.footer
+      block footer

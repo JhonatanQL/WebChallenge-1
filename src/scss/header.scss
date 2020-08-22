@@ -1,0 +1,60 @@
+@import '../scss/base/base.scss';
+
+.header{
+  padding: 0px 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 60px;
+  place-items: center;
+  &__icon{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .nav{
+    display: none;
+  }
+}
+
+.main{
+  .presentation{
+    display: grid;
+    grid-template-rows: repeat(2, 320px);
+    &__imgfondo{
+      background-image: url("../assets/img/bg-intro-mobile.svg");
+      background-repeat: no-repeat;
+      background-position-y: 25%;
+      overflow: hidden;
+    }
+    &__img img{
+      max-width: 100%;
+      position: relative;
+      bottom: 135px;
+    }
+    &__description{
+      padding: 0px 20px;
+      display: grid;
+      grid-template-rows: 100px repeat(2, 1fr);
+      place-items: center;
+      .presentation-description__titulo{
+        font-size: 1.5em;
+        text-align: center;
+        color: $bgColorFooter;
+      }
+      .presentation-description__concepto{
+        font-size: .8em;
+        text-align: center;
+        line-height: 20px;
+        color: $colorDescription;
+      }
+      .presentation-description__button button{
+        padding: 15px 20px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        background-image: linear-gradient(hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+      }
+    }
+  }
+
+}
