@@ -10,7 +10,7 @@ import cachebust from 'gulp-cache-bust'
 gulp.task('pug',()=>{
   return gulp .src('./src/views/pages/*.pug')
     .pipe(GulpPug({
-      pretty: true     //False para minificar y True para desminificar
+      pretty: false     //False para minificar y True para desminificar
     }))
     .pipe(cachebust({
       type: 'timestamp'

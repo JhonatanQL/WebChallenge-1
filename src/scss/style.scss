@@ -1,1 +1,105 @@
 @import '../scss/base/base.scss', '../scss/header.scss';
+
+.main{
+  .presentation{
+    display: grid;
+    grid-template-rows: repeat(2, 320px);
+    &__imgfondo{
+      background-image: url("../assets/img/bg-intro-mobile.svg");
+      background-repeat: no-repeat;
+      background-position-y: 25%;
+      overflow: hidden;
+    }
+    &__img img{
+      max-width: 100%;
+      position: relative;
+      bottom: 135px;
+    }
+    &__description{
+      padding: 0px 20px;
+      display: grid;
+      grid-template-rows: 100px repeat(2, 1fr);
+      place-items: center;
+      text-align: center;
+      .presentation-description__titulo{
+        font-size: 1.5em;
+        color: $bgColorFooter;
+      }
+      .presentation-description__concepto{
+        font-size: .8em;
+        line-height: 20px;
+        color: $colorDescription;
+      }
+      .presentation-description__button button{
+        padding: 15px 20px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        background-image: linear-gradient(hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+        color: white;
+      }
+    }
+  }
+  .easybank{
+    background-color: $bgFondo;
+    padding: 0px 20px 60px;
+    display: grid;
+    grid-template-rows: 250px 1fr;
+    place-items: center;
+    text-align: center;
+    &__titulo h2{
+      color: $bgColorFooter;
+    }
+    &__description p{
+      color: $colorDescription;
+      font-size: .8em;
+    }
+    &__servicios{
+      display: grid;
+      grid-template-rows: repeat(4, 1fr);
+      place-items: center;
+    }
+    &__servicio:nth-child(2), &__servicio:nth-child(3), &__servicio:nth-child(4){
+      padding-top: 20px;
+    }
+    &-servicio__titulo{
+      color: $bgColorFooter;
+    }
+    &-servicio__description{
+      color: $colorDescription;
+      font-size: .8em;
+    }
+  }
+  .articulos{
+    background-color: hsl(0, 0, 98%) ;
+    padding: 0px 20px;
+    display: grid;
+    grid-template-rows: 120px repeat(4, 1fr);
+    &__titulo{
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      color: $bgColorFooter
+    }
+    .articulo{
+      background-color: $bgFondo;
+      padding-bottom: 30px;
+      &__img img{
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      &__subtitulo, &__descripcion, &__titulo{
+        padding: 0px 30px;
+        font-size: .6em;
+        color: $colorDescription;
+      }
+      &__titulo{
+        font-size: .9em;
+        color: $bgColorFooter
+      }
+      &__descripcion{
+        font-size: .7em;
+      }
+    } 
+  }
+}
